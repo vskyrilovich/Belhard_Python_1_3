@@ -3,7 +3,7 @@ import pytest
 from tasks.standart.variables.size_of import size_in_kb
 
 
-@pytest.mark.skip()
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
     "some_object, expected", [
         ([i for i in range(100)], "0.9 кб"),
