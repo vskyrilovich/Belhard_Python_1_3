@@ -3,6 +3,7 @@ import pytest
 from tasks.hard.delete_brackets import shortener
 
 
+@pytest.mark.skip
 @pytest.mark.parametrize(
     "text, expected", [
         ('Падал(лишнее (лишнее) лишнее) прошлогодний снег (лишнее)', 'Падал прошлогодний снег'),
