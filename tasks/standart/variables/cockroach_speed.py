@@ -20,8 +20,8 @@ def cockroach_speed(kmh_speed: float) -> int:
 
     :return: скорость в см/с
     """
-
-    return None
+    result = kmh_speed * 27.777
+    return round(result)
 
 
 if __name__ == '__main__':

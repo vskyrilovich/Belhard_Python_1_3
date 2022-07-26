@@ -25,8 +25,10 @@ def str_sum(str1: str, str2: str) -> int:
     :return: сумму чисел из строк
     :rtype: int
     """
-
-    return None
+    result1 = str1
+    result2 = str2
+    result3 = int(str1) + int(str2)
+    return result3
 
 
 if __name__ == '__main__':

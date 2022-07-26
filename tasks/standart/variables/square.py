@@ -10,7 +10,7 @@
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
 - square(12) -> (48, 144, 16.970562748477143)
-- square(7) -> (28, 49, 9.899494936611665)
+- square(7) -> (28, 49, 98.99494936611665)
 """
 from math import sqrt
 
@@ -25,8 +25,8 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-
-    return None
+    p = (int(side) * 4, int(side) * int(side), int(side) * 2**(1/2))
+    return p
 
 
 if __name__ == '__main__':
