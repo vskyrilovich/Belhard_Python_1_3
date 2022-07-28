@@ -25,9 +25,8 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-    p = (int(side) * 4, int(side) * int(side), int(side) * 2**(1/2))
+    p = (int(side) * 4, int(side) * int(side), int(side)*2**0.5)
     return p
-
 
 if __name__ == '__main__':
     side_val = input('Введите сторону квадрата: ')

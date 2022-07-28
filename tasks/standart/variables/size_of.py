@@ -11,7 +11,7 @@ from sys import getsizeof
 from typing import Any
 
 
-def size_in_kb(some_object: Any) -> str:
+def size_in_kb(some_object: Any) -> float:
     """Вычисляет размер объекта в кб, округленного до 2 знаков после запятой,
     и возвращает строку
 
@@ -20,8 +20,8 @@ def size_in_kb(some_object: Any) -> str:
     """
     result_1 = getsizeof(some_object) / 1024
     result = round(result_1, 2)
-    return result
-
+    result2 = f"{result} кб"
+    return result2
 
 
 if __name__ == '__main__':
