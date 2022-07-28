@@ -24,8 +24,13 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :return: кортеж с параметрами
     :rtype: tuple
     """
+    g = int(side_1**2) + int(side_2**2)
+    kor = pow(g, 0.5)
+    p = int(side_1 + side_2 + kor)
+    pp = int((side_1 + side_2 + kor) / 2)
+    s = int(pp * (pp - kor) * (pp - side_1) * (pp - side_2))**0.5
 
-    return None
+    return kor, p, s
 
 
 if __name__ == '__main__':
