@@ -25,7 +25,7 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-    p = (int(side) * 4, int(side) * int(side), int(side)*2**0.5)
+    p = (float(side) * 4, float(side) * float(side), float(side)*2**0.5)
     return p
 
 if __name__ == '__main__':
